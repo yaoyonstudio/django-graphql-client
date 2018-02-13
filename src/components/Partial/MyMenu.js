@@ -10,6 +10,15 @@ class MyMenu extends Component {
             <Link to="/">Home</Link>
           </li>
           <li>
+            <Link to="/article">Article</Link>
+          </li>
+          <li>
+            <Link to="/profile">Profile</Link>
+          </li>
+          <li>
+            <Link to="/info">Info</Link>
+          </li>
+          <li>
             <Link to="/test">Test</Link>
           </li>
         </ul>

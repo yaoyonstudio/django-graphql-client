@@ -2,13 +2,29 @@
   height: 100%;
   min-height: 100vh; }
 
+.main {
+  width: 100%;
+  height: 100vh; }
+
+.content {
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: .44rem; }
+
 .MyMenu {
   text-align: center;
-  border-bottom: 1px solid #ddd; }
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  height: .44rem;
+  left: 0;
+  top: 0;
+  z-index: 999; }
   .MyMenu ul li {
     display: inline-block;
-    height: .4rem;
-    line-height: .4rem;
+    height: .44rem;
+    line-height: .44rem;
     padding: 0 .1rem;
     color: #333; }
 
@@ -17,3 +33,47 @@
   line-height: .4rem; }
   .Loading p, .Nomore p, .Loadmore p {
     text-align: center; }
+
+.PostItem {
+  padding: .1rem;
+  border-bottom: 1px solid #ddd;
+  width: 100%; }
+  .PostItem aside {
+    width: 100%;
+    min-height: .8rem; }
+    .PostItem aside h4 {
+      font-size: .16rem; }
+    .PostItem aside span {
+      font-size: .14rem; }
+    .PostItem aside footer {
+      width: 100%; }
+  .PostItem img {
+    width: .8rem;
+    height: .8rem;
+    margin-left: .1rem; }
+  .PostItem .cate {
+    background-color: #d33;
+    color: #fff;
+    font-size: .14rem;
+    padding: 0 .1rem;
+    display: inline-block;
+    border-radius: .04rem;
+    margin-right: .1rem; }
+  .PostItem .date {
+    color: #666; }
+
+.Profile_card {
+  border: 1px solid #ddd;
+  width: 86%;
+  margin: .2rem auto;
+  padding: .2rem; }
+  .Profile_card aside h4 {
+    font-size: .16rem;
+    color: #333;
+    margin-bottom: .1rem; }
+  .Profile_card aside p {
+    font-size: .14rem;
+    color: #666; }
+  .Profile_card img {
+    height: .8rem;
+    width: .8rem; }

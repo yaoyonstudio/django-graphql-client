@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { graphql } from 'react-apollo'
+import { graphql, compose } from 'react-apollo'
 import gql from 'graphql-tag'
 
 import MyMenu from '../Partial/MyMenu'
@@ -37,7 +37,7 @@ class PostItem extends Component {
   }
 }
 
-class Home extends Component {
+class Article extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -144,4 +144,4 @@ export default graphql(POSTS_QUERY, {
       }
     }
   }
-})(Home)
+})(Article)

@@ -4,20 +4,35 @@
 }
 
 .container {
+
 }
 
 .main {
+  width: 100%;
+  height: 100vh;
+}
 
+.content {
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: .44rem;
 }
 
 .MyMenu {
   text-align: center;
+  background-color: #eee;
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  height: .44rem;
+  left: 0;
+  top: 0;
+  z-index: 999;
   ul {
     li {
       display: inline-block;
-      height: .4rem;
-      line-height: .4rem;
+      height: .44rem;
+      line-height: .44rem;
       padding: 0 .1rem;
       color: #333;
     }
@@ -31,4 +46,63 @@
     text-align: center;
   }
 }
+
+.PostItem {
+  padding: .1rem;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  aside {
+    width: 100%;
+    h4 {
+      font-size: .16rem;
+    }
+    span {
+      font-size: .14rem;
+    }
+    min-height: .8rem;
+    footer {
+      width: 100%;
+    }
+  }
+  img {
+    width: .8rem;
+    height: .8rem;
+    margin-left: .1rem;
+  }
+  .cate {
+    background-color: #d33;
+    color: #fff;
+    font-size: .14rem;
+    padding: 0 .1rem;
+    display: inline-block;
+    border-radius: .04rem;
+    margin-right: .1rem;
+  }
+  .date {
+    color: #666;
+  }
+}
+
+.Profile_card {
+  border: 1px solid #ddd;
+  width: 86%;
+  margin: .2rem auto;
+  padding: .2rem;
+  aside {
+    h4 {
+      font-size: .16rem;
+      color: #333;
+      margin-bottom: .1rem;
+    }
+    p {
+      font-size: .14rem;
+      color: #666;
+    }
+  }
+  img {
+    height: .8rem;
+    width: .8rem;
+  }
+}
+
 
